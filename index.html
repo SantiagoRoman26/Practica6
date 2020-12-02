@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <title>Administracion</title>
+</head>
+
+
+
+<body>
+    <!-- *********************************************************** Barra de opciones *********************************************************** -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            Imagenes
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarNavDropdown" aria-label="Toggle Navigation" aria-expanded="false">
+            <span class="navbar-toggler-icon"> </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"> <a class="nav-link" href="#"><span class="icon-home"></span>Inicio</a></li>
+                <li class="nav-item "> <a class="nav-link" data-toggle="modal" href="#Login">Login</a></li>
+                <li class="nav-item"> <a class="nav-link" data-toggle="modal" href="#Regist"><span class="icon-up-circled2"></span>Registrarse</a>
+                </li>
+                <li class="nav-item"> <a class="nav-link" href="./administracion.html"><span
+                            class="icon-star-empty"></span>Administrar Usuarios</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <div class="jumbotron">
+        <h1>
+            <strong>DASW</strong>
+        </h1>
+        <h4>Crear una interfaz web para el registro de usuarios</h4>
+    </div>
+    <div class="lista col-md-4">
+        <ul>
+            <li>
+                <p>
+                    1
+                </p>
+            </li>
+            <li>
+                <p>
+                    2
+                </p>
+            </li>
+            <li>
+                <p>
+                    3
+                </p>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="Login" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="card-title text-center">Sign In</h5>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-sm-9 col-md-7 col-lg-5 ">
+                            <div class="card card-signin my-7">
+                                <div class="card-body">
+                                    <form class="form-signin col-10">
+
+                                        <div class="input-group mb-4">
+                                            <div class="input-group-prepend ">
+                                                <span class="input-group-text oi oi-person"></span>
+                                            </div>
+                                            <input type="email" id="inputEmail" class="form-control"
+                                                placeholder="Email address" required autofocus>
+                                        </div>
+
+
+                                        <div class="input-group mb-4">
+                                            <div class="input-group-prepend">
+                                                <span class=" input-group-text oi oi-key"></span>
+                                            </div>
+                                            <input type="password" id="inputPassword" class="form-control"
+                                                placeholder="Password" required>
+                                        </div>
+                                        <div class="row">
+                                            <button class=" col-lg-3  btn btn-lg btn-primary btn-block text-uppercase "
+                                                type="submit" id="signIn" data-dismiss="modal">Sign
+                                                in</button>
+                                            <hr class="my-4">
+                                            <button class="col-lg-3 btn btn-lg btn-primary btn-block text-uppercase "
+                                                type="submit" id="close" data-dismiss="modal">Close
+                                            </button>
+                                            <hr class="my-4">
+                                        </div>
+                                        <p class="regist">no tienes cuenta?<a href="#" data-dismiss="modal">registrate
+                                                aqui</a></p>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- modal body -->
+
+            </div><!-- modal content -->
+
+        </div> <!-- modal dialog -->
+    </div>
+
+
+
+
+
+
+
+    <div class="modal fade" id="Regist" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="card-title text-center">Registro</h5>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-9 col-md-7 col-lg-5 ">
+                            <div class="card card-signin my-7">
+                                <div class="card-body">
+                                    <form class="form-signin col-10">
+                                        <div class="form-row">
+                                            <div class="form-group col-sm-6">
+                                                <label for="nombres">Nombres </label>
+                                                <input type="text" class="form-control" id="nombres"
+                                                    placeholder="Ingrese su nombre" required>
+                                            </div>
+                                            <div class="form-group col-sm-6">
+                                                <label for="apellidos">Apellidos </label>
+                                                <input type="text" class="form-control" id="apellidos"
+                                                    placeholder="Ingrese sus apellidos" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-sm-12">
+                                                <label for="correo">Correo </label>
+                                                <input type="email" class="form-control" id="correo"
+                                                    placeholder="Ingrese su correo electronico" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-sm-12">
+                                                <label for="contrasenia">contraseña</label>
+                                                <input type="password" class="form-control" id="password"
+                                                    placeholder="Ingrese su contraseña" required minlength="6"
+                                                    maxlength="20">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-sm-12">
+                                                <label for="contrasenia-R">Confirmar C</label>
+                                                <input type="password" class="form-control" id="password-r"
+                                                    placeholder="confirme su contraseña">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-sm-12">
+                                                <label for="edad">Fecha de nacimiento </label>
+                                                <input type="date" class="form-control" id="edad" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-sm-12">
+                                                <label for="edad">Genero</label><br>
+                                                <input type="radio" name="transporte" value="1">Hombre
+                                                <br>
+                                                <input type="radio" name="transporte" value="2">Mujer
+                                                <br>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-sm-12">
+                                                <label for="edad">Imagen de perfil </label>
+                                                <input type="url" class="form-control" id="edad"
+                                                    placeholder="url de la imagen" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <button class=" btn btn-outline-success my-2 my-sm-0 mx-auto" type="submit"
+                                                id="Registrarse">Registrarse</button>
+                                            <button class=" btn btn-lg btn-primary btn-block text-uppercase "
+                                                type="submit" id="cerrar" data-dismiss="modal">Cerrar
+                                            </button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- modal body -->
+
+            </div><!-- modal content -->
+
+        </div> <!-- modal dialog -->
+    </div>
+
+
+</body>
+
+</html>
+<!--
+<span class="oi oi-person"></span>
+<span class="oi oi-key"></span>
+-->

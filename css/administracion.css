@@ -1,0 +1,13 @@
+.container ul .media{
+    border: rgb(157, 154, 154) 1.5px solid;
+    overflow: auto;
+}
+.container li+li{
+    margin-top: 20px;
+}
+.media-body ul li{
+    list-style-type: none;
+}
+.media-right button{
+    margin-top: 15px;
+}
